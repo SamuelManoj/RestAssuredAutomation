@@ -12,10 +12,10 @@ public class Delete {
 
         given()
                 .contentType(ContentType.JSON)
-                .accept(ContentType.JSON)
-        .when()
-                .delete("users/2")
-        .then()
+                .accept(ContentType.JSON).
+        when()
+                .delete("users/2").
+        then()
                 .statusCode(204)
                 .log().all();
     }
